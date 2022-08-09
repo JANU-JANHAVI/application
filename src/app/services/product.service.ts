@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { appConstant } from '../app.constant';
+import { appConst } from '../app.const';
 import { environment } from '../environments/environment';
 import { Product } from '../products/product';
 
@@ -9,7 +9,7 @@ import { Product } from '../products/product';
   providedIn: 'root',
 })
 export class ProductService {
-  apiUrl = `${environment.apiEndpoint}${appConstant.apiRoute.products}`;
+  apiUrl = `${environment.apiEndpoint}${appConst.apiRoute.products}`;
 
   constructor(private http: HttpClient) {}
 
