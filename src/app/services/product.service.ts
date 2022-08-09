@@ -8,7 +8,7 @@ import { Product } from '../products/product';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductDataService {
+export class ProductService {
   apiUrl = `${environment.apiEndpoint}${appConstant.apiRoute.products}`;
 
   constructor(private http: HttpClient) {}
